@@ -18,7 +18,10 @@ namespace IPI201_FIN
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form2());
 
-            /اتناناتناتناتن
+          //
+          //اتل
+          
+            ///اتناناتناتناتن
 
         }
     }
