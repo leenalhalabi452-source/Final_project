@@ -117,6 +117,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="class\SQL_DO_IT.cs" />
+    <Compile Include="كرس تجريبة.cs" />
+    <Compile Include="كلاس تجربي 2.cs" />
     <EmbeddedResource Include="From\AddChoiceForm.resx">
       <DependentUpon>AddChoiceForm.cs</DependentUpon>
     </EmbeddedResource>
