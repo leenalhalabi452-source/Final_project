@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{64BD624A-B2E2-442F-94F3-596F7C3BE0D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IPI201_FIN</RootNamespace>
+    <AssemblyName>IPI201+FIN</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="class\Create_DB.cs" />
+    <Compile Include="class\Create_Procedures.cs" />
+    <Compile Include="class\Create_Tables.cs" />
+    <Compile Include="class\DatabaseInitializer.cs" />
+    <Compile Include="From\AddChoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From\AddChoiceForm.Designer.cs">
+      <DependentUpon>AddChoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From\ApproveLeaveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From\ApproveLeaveForm.Designer.cs">
+      <DependentUpon>ApproveLeaveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From\DeleteChoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From\DeleteChoiceForm.Designer.cs">
+      <DependentUpon>DeleteChoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From\EditChoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From\EditChoiceForm.Designer.cs">
+      <DependentUpon>EditChoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From\FirstAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From\FirstAdminForm.Designer.cs">
+      <DependentUpon>FirstAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From\Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From\Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From\Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From\Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From\Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From\Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="From\Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="From\Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="class\GetData.cs" />
+    <Compile Include="class\Insert.cs" />
+    <Compile Include="class\LoginInitializer.cs" />
+    <Compile Include="class\model.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="class\SQL_DO_IT.cs" />
+    <EmbeddedResource Include="From\AddChoiceForm.resx">
+      <DependentUpon>AddChoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From\ApproveLeaveForm.resx">
+      <DependentUpon>ApproveLeaveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From\DeleteChoiceForm.resx">
+      <DependentUpon>DeleteChoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From\EditChoiceForm.resx">
+      <DependentUpon>EditChoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From\FirstAdminForm.resx">
+      <DependentUpon>FirstAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From\Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From\Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From\Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="From\Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="txt\SQL Connection.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

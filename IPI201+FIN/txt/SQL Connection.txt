@@ -1,0 +1,1 @@
+﻿Server=.\LEEN;Database=master;User Id=sa;Password=123;
